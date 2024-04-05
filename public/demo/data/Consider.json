@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "dateCreate": "22/12/2023",
+            "RequestNum": "789",
+            "ProductName": "Product Name",
+            "image": "bamboo-watch.jpg",
+            "Name": "ทดสอบ Mockup",
+            "deadline": "09/13/2022",
+            "DocCheck": "Mockup.pdf",
+            "Price": 24,
+            "Status": "Consider",
+            "Manage": "INSTOCK"
+        },
+        {
+            "id": "2",
+            "dateCreate": "22/12/2023",
+            "RequestNum": "101112",
+            "ProductName": "Product Name",
+            "image": "bamboo-watch.jpg",
+            "Name": "ทดสอบ Mockup",
+            "deadline": "09/13/2022",
+            "DocCheck": "Mockup.pdf",
+            "Price": 24,
+            "Status": "PR",
+            "Manage": "INSTOCK"
+        }
+    ]
+}

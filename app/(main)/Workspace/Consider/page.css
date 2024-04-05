@@ -1,0 +1,36 @@
+/*
+[
+
+#000000
+
+#0061FF
+
+#FFFFFF
+]
+*/
+.button-split .p-button {
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-width: 2px !important;
+    border-color: #ffffff !important;
+    border-radius: 3px !important;
+}
+
+.button-split .p-menuitem-icon {
+    color: #000000 !important;
+}
+.p-menu {
+    background: transparent !important;
+}
+.p-menuitem-text {
+    color: #ffffff !important;
+}
+
+li > .p-menuitem-active {
+    color: #0061ff !important;
+}
+
+::placeholder {
+    /* Edge 12-18 */
+    color: #000000 !important;
+}

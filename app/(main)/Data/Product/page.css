@@ -1,0 +1,31 @@
+/*
+[
+#222831 
+
+#2D4059
+
+#FF5722
+
+#EEEEEE
+
+#000000
+
+#0061FF
+
+#FFFFFF
+]
+*/
+
+
+li > .p-menuitem-active {
+    color: #000000 !important;
+}
+
+::placeholder {
+    /* Edge 12-18 */
+    color: #747272 !important;
+}
+
+input {
+    border-radius: 3px !important;
+}

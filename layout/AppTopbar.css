@@ -1,0 +1,33 @@
+.menu-top {
+    color: #ffffff !important;
+}
+
+body {
+    background-color: #000000;
+}
+
+.menu-main .p-menuitem-text {
+    color: #ffffff !important;
+}
+.p-menuitem-active {
+    background: transparent !important;
+}
+.p-submenu-list {
+    background-color: #747272ba !important;
+}
+
+.menu-main .p-icon {
+    color: #ffffff !important;
+}
+.p-menuitem-icon {
+    color: #ffffff !important;
+}
+
+.p-menuitem-link:hover {
+    background-color: transparent !important;
+    border-color: #ffffff !important;
+    color: #0061ff !important;
+}
+.p-menuitem-link {
+    background-color: transparent !important;
+}
