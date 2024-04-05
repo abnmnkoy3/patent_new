@@ -408,15 +408,15 @@ const Product: Page = () => {
                                                             <li className="flex align-items-center py-3 px-2 border-top-1 border-300 flex-wrap col-12  ">
                                                                 <p className='p-0 m-0'>{`${d.document_name} :`}</p>
                                                                 <div className='col-11 md:justify-content-between border-1 h-3rem m-1' key={key}>
-                                                                    <a href={`${d.file_address}`} target='_blank' className='p-1 line-under ' style={{ verticalAlign: 'middle' }}>{`${d.file_name}`}</a>
+                                                                    <a href={`${d.file_address}`} target='_blank' className='p-1 line-under ' style={{ verticalAlign: 'middle' }}>{`${d.file_name_random}`}</a>
                                                                 </div>
                                                             </li >
                                                         </div>
-                                                        : <div className='grid nested-grid'>
-                                                            <li className="flex align-items-center py-3 px-2 border-top-1 border-300 flex-wrap col-12  ">
+                                                        : <div className='flex flex-column'>
+                                                            <li className="flex align-items-center py-1 px-1 border-top-1 border-300 flex-wrap col-12  ">
                                                                 <p className='p-0 m-0'>{`${d.document_name} :`}</p>
-                                                                <div className='col-11 md:justify-content-between border-1 h-3rem m-1' key={key}>
-                                                                    <a href={`${d.file_address}`} target='_blank' className='p-1 line-under ' style={{ verticalAlign: 'middle' }}>{`${d.file_name}`}</a>
+                                                                <div className='col-12 md:justify-content-between border-1 h-0rem m-1' key={key}>
+                                                                    <a href={`${d.file_address}`} target='_blank' className='p-1 line-under ' style={{ verticalAlign: 'middle' }}>{`${d.file_name_random}`}</a>
                                                                 </div>
                                                             </li >
                                                         </div>}

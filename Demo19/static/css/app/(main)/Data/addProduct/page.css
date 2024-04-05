@@ -1,0 +1,62 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[3].oneOf[12].use[3]!./app/(main)/Data/addProduct/page.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.background-1 {
+    /* background: rgba(170, 169, 169, 0.187) !important;   */
+    background: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    border-width: 1px !important;
+    border-radius: 3px !important;
+}
+/* .background-input {
+    background: #000000 !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    border-width: 1px !important;
+    border-radius: 3px !important; */
+/* } */
+.setborder_file {
+    border-left-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-radius: 0% 0% 1% 1% !important;
+}
+
+.p-dropdown-items-wrapper {
+    /* overflow: hidden !important; */
+    color: #000000 !important;
+}
+.p-dropdown-label,
+.p-dropdown-item {
+    color: #000000 !important;
+}
+
+.p-dropdown-trigger-icon {
+    color: #000000 !important;
+}
+.p-dropdown-label {
+    border-radius: 6% 0% 0% 6% !important;
+}
+
+/* .p-datepicker-prev,
+.p-datepicker-month,
+.p-datepicker-year,
+.p-datepicker-next,
+.p-datepicker-header,
+.p-datepicker,
+.p-dropdown-trigger,
+.p-inputtext {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: rgba(0, 0, 0, 0.65) !important;
+} */
+
+.text {
+    border-radius: 0 !important;
+}
+input {
+    border-width: 2px !important;
+    border-radius: 3px !important;
+}
+

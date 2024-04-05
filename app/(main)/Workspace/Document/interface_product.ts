@@ -32,6 +32,8 @@ export interface Product {
     tm_num_pr?: any;
     typeQuery?: any;
     fk_table_more?: any;
+    docname?: any;
+    docfile?: any;
 }
 
 export interface Manage {

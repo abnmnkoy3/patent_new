@@ -40,14 +40,6 @@
         "async": false
       }
     },
-    "(app-client)/./app/layout.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/layout.tsx",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
     "(app-client)/./app/(main)/page.tsx": {
       "*": {
         "id": "(sc_client)/./app/(main)/page.tsx",
@@ -56,9 +48,49 @@
         "async": false
       }
     },
+    "(app-client)/./app/layout.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/layout.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(main)/Workspace/Document/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(main)/Workspace/Document/page.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./layout/layout.tsx": {
       "*": {
         "id": "(sc_client)/./layout/layout.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(main)/Workspace/Consider/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(main)/Workspace/Consider/page.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(main)/Workspace/Ongoing/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(main)/Workspace/Ongoing/page.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
+    "(app-client)/./app/(main)/Data/addProduct/page.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/(main)/Data/addProduct/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -147,6 +179,14 @@
       ],
       "async": false
     },
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\page.tsx": {
+      "id": "(app-client)/./app/(main)/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(main)/page:static/chunks/app/(main)/page.js"
+      ],
+      "async": false
+    },
     "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\layout.tsx": {
       "id": "(app-client)/./app/layout.tsx",
       "name": "*",
@@ -155,11 +195,11 @@
       ],
       "async": false
     },
-    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\page.tsx": {
-      "id": "(app-client)/./app/(main)/page.tsx",
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Workspace\\Document\\page.tsx": {
+      "id": "(app-client)/./app/(main)/Workspace/Document/page.tsx",
       "name": "*",
       "chunks": [
-        "app/(main)/page:static/chunks/app/(main)/page.js"
+        "app/(main)/Workspace/Document/page:static/chunks/app/(main)/Workspace/Document/page.js"
       ],
       "async": false
     },
@@ -170,15 +210,51 @@
         "app/(main)/layout:static/chunks/app/(main)/layout.js"
       ],
       "async": false
+    },
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Workspace\\Consider\\page.tsx": {
+      "id": "(app-client)/./app/(main)/Workspace/Consider/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(main)/Workspace/Consider/page:static/chunks/app/(main)/Workspace/Consider/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Workspace\\Ongoing\\page.tsx": {
+      "id": "(app-client)/./app/(main)/Workspace/Ongoing/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(main)/Workspace/Ongoing/page:static/chunks/app/(main)/Workspace/Ongoing/page.js"
+      ],
+      "async": false
+    },
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Data\\addProduct\\page.tsx": {
+      "id": "(app-client)/./app/(main)/Data/addProduct/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/(main)/Data/addProduct/page:static/chunks/app/(main)/Data/addProduct/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\page": [],
     "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\layout": [
       "static/css/app/layout.css"
     ],
-    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\page": [],
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Workspace\\Document\\page": [
+      "static/css/app/(main)/Workspace/Document/page.css"
+    ],
     "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\layout": [
       "static/css/app/(main)/layout.css"
+    ],
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Workspace\\Consider\\page": [
+      "static/css/app/(main)/Workspace/Consider/page.css"
+    ],
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Workspace\\Ongoing\\page": [
+      "static/css/app/(main)/Workspace/Ongoing/page.css"
+    ],
+    "C:\\Users\\Jakkawan.S\\Desktop\\IP_DEMO\\ip_react\\app\\(main)\\Data\\addProduct\\page": [
+      "static/css/app/(main)/Data/addProduct/page.css"
     ]
   }
 }

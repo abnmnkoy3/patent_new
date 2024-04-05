@@ -528,36 +528,40 @@ const Product: Page = () => {
         setfileNameCommand(selectedFilesCommand?.[0].name);
     };
     ////////////////////////////////////////////////////
+    const [DocumentlinkFile, setDocumentlinkFile]: any = useState();
+
     const DocumentLink = (product: Product) => {
         return (
-            // product?.status_docuemnt_file === 'req_power_of_attorney' ?
-            //     <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_1}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`หนังสือมอบอำนาจ.doc`}</a>
-            //     : product?.status_docuemnt_file === 'req_transfer' ?
-            //         <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_2}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`หนังสือโอนสิทธิบัตรการประดิษฐ์.doc`}</a>
-            //         : product?.status_docuemnt_file === 'req_invention' ?
-            //             <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_3}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`คำขอการประดิษฐ์.pdf`}</a>
-            //             : product?.status_docuemnt_file === 'req_cad' ?
-            //                 <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_4}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`คำสั่งขอไฟล์Cad.pdf`}</a>
-            //                 : product?.status_docuemnt_file === 'req_search' ?
-            //                     <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_5}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`แบบฟอร์มสืบค้น.pdf`}</a>
-            //                     : product?.status_docuemnt_file === 'req_draft' ?
-            //                         <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_6}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`แบบฟอร์มร่างคำขอ.pdf`}</a>
-            //                         : product?.status_docuemnt_file === 'req_formimg' ?
-            //                             <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_7}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`แบบฟอร์มทำรูป.pdf`}</a>
-            //                             : product?.status_docuemnt_file === 'req_design_patent' ?
-            //                                 <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_8}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`คำพรรณาสิทธิบัตรการออกแบบ.pdf`}</a>
-            //                                 : product?.status_docuemnt_file === 'req_img_product' ?
-            //                                     <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_9}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`ภาพแสดงแบบผลิตภัณฑ์.pdf`}</a>
-            //                                     : product?.status_docuemnt_file === 'req_other' ?
-            //                                         <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_10}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`อื่นๆ.pdf`}</a>
-            //                                         :
-            //                                         <a className='p-1' href={`${process.env.NEXT_PUBLIC_ENV_API}${process.env.NEXT_PUBLIC_ENV_DOWNLOAD}/${process.env.NEXT_PUBLIC_ENV_LIST_11}`} style={{ verticalAlign: 'middle', textDecoration: 'underline' }}>{`คำสั่งส่งพิจารณา.pdf`}</a>
+            product?.docname.map(function (d_product: any, index: any) {
+                {
+                    return (
+                        <li>
+                            <a className={`${product?.docfile[index]?.ms_doc_id === d_product.ms_doc_id ? 'line-through' : ''}`}>
+                                {`${d_product.document_name}`}
+                            </a>
+                        </li>
 
-            <a>
-
-            </a>
-
-        )
+                    )
+                }
+            })
+        ) //line-through
+    }
+    const statusDoc = (product: Product) => {
+        return (
+            product?.docname.map(function (d_product: any, index: any) {
+                {
+                    return (
+                        <a className={`flex flex-column text-center`}>
+                            {product?.docfile[index]?.file_step === undefined ?
+                                `Wait`
+                                :
+                                `${product?.docfile[index]?.file_step}`
+                            }
+                        </a>
+                    )
+                }
+            })
+        ) //line-through
     }
     /* Code Step Law */
     const GetDataLaw = () => {
@@ -838,7 +842,7 @@ const Product: Page = () => {
                                     <Column field='product_type' header='ประเภทผลิตภัณฑ์' alignHeader={'center'} />
                                     <Column field='' header='PatentNumber' alignHeader={'center'} />
                                     <Column body={DocumentLink} header='เอกสารแนบ' alignHeader={'center'} />
-                                    <Column header='Docstatus' alignHeader={'center'} />
+                                    <Column body={statusDoc} header='Docstatus' alignHeader={'center'} />
                                     <Column header='เอกสาร Ongoing' alignHeader={'center'} />
                                     <Column header='ผู้จัดทำ' alignHeader={'center'} />
                                     <Column header='วันที่Submit' alignHeader={'center'} />
@@ -1005,20 +1009,21 @@ const Product: Page = () => {
                                                                 <p>{d_product.document_name}</p>
                                                             </div>
                                                             <div className='col-3'>
-
-                                                                <>
-                                                                    {Productfileshow?.map(function (file_product: any) {
-                                                                        return (
-                                                                            <div className='flex flex-column '>
-                                                                                {d_product.ms_doc_id === file_product.ms_doc_id ?
-                                                                                    <a className='flex align-items-center justify-content-center p'>
-                                                                                        {file_product.file_name_random}
-                                                                                    </a>
-                                                                                    : ''}
-                                                                            </div>
-                                                                        )
-                                                                    })}
-                                                                </>
+                                                                <td>
+                                                                    <>
+                                                                        {Productfileshow?.map(function (file_product: any) {
+                                                                            return (
+                                                                                <div className='flex flex-column '>
+                                                                                    {d_product.ms_doc_id === file_product.ms_doc_id ?
+                                                                                        <a className='flex align-items-center justify-content-center p'>
+                                                                                            {file_product.file_name_random}
+                                                                                        </a>
+                                                                                        : ''}
+                                                                                </div>
+                                                                            )
+                                                                        })}
+                                                                    </>
+                                                                </td>
                                                             </div>
                                                             <div className='justify-content-center col-2'>
                                                                 <>
